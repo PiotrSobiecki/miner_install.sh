@@ -23,7 +23,6 @@ sudo npm install -g pm2
 sudo dpkg --configure -a
 sudo apt install -y python3-pip
 
-# Install Python packages with -y option to automatically answer yes
 pip install -e ./ -y
 pip install protobuf==3.20 -y
 pip install streamlit grpcio-tools -y
