@@ -1,7 +1,7 @@
 #!/bin/bash
 
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    source ~/.bashrc
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
 
 set -e
 
@@ -27,7 +27,7 @@ sudo npm install -g pm2
 sudo dpkg --configure -a
 sudo apt install -y python3-pip
 
-pip install -e ./
+pip install -e .
 pip install protobuf==3.20
 pip install streamlit grpcio-tools
 pip3 uninstall protobuf
