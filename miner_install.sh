@@ -1,5 +1,5 @@
 #!/bin/bash
-
+nano miner_install.sh
 chmod +x miner_install.sh
 ./miner_install.sh
 sudo apt-get update && sudo apt-get upgrade -y
