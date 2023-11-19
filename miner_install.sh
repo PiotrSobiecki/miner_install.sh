@@ -1,15 +1,13 @@
 #!/bin/bash
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-source ~/.bashrc
-
-set -e
-
 sudo apt-get update && sudo apt-get upgrade -y
 
 sudo apt install -y software-properties-common
 sudo add-apt-repository universe
 sudo apt update
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
 
 nvm install v16
 
@@ -36,4 +34,4 @@ pip3 uninstall huggingface-hub
 pip3 install 'huggingface-hub==0.18.0'
 pip install openai==0.28
 
-echo "Zakończono instalację pomyślnie."
+echo "Czas kopać COM."
