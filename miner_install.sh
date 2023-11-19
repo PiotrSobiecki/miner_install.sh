@@ -31,8 +31,13 @@ pip install -e ./
 pip install protobuf==3.20
 pip install streamlit grpcio-tools
 pip3 uninstall protobuf
-pip3 install 'protobuf>=4.21.6,<5.0dev'
-pip3 uninstall huggingface-hub
-pip3 install 'huggingface-hub==0.18.0'
-pip install openai==0.28
+pip3 install 'protobuf>=4.21.6,<5.0dev' --yes
+pip3 uninstall huggingface-hub --yes
+pip3 install 'huggingface-hub==0.18.0' --yes
+pip install openai==0.28 --yes
+
+
+
+
+
 
